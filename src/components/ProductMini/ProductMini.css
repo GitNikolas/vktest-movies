@@ -1,0 +1,48 @@
+.product-mini{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 350px;
+    border-radius: 10px;
+    padding: 5px;
+    outline: 1px solid gray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-mini__title{
+    margin: 0 0 10px;
+    max-height: 24px;
+    max-width: 300px;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+}
+
+.product-mini__title:hover{
+    color: rgb(149, 149, 149);
+}
+
+.product-mini__price{
+    margin: 0;
+}
+
+.product-mini__image{
+    max-width: 70%;
+    max-height: 70%;
+    cursor: pointer;
+}
+
+.product-mini__add-button{
+    font-size: 18px;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(95, 78, 252);
+    border: none;
+    color: white;
+    cursor: pointer;
+}

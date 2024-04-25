@@ -1,0 +1,98 @@
+.product{
+    display: grid;
+    grid-template-areas:
+    'image title title trash'
+    'image description description description'
+    'image price rating rating'
+    'amount amount amount amount';
+    padding: 10px;
+    background-color: rgb(33, 34, 37);
+    border-radius: 15px;
+    gap:10px;
+    box-sizing: border-box;
+}
+
+.product__image{
+    max-width: 200px;
+    max-height: 200px;
+    grid-area: image;
+}
+
+.product__title{
+    grid-area: title;
+    margin: 0;
+}
+
+.product__trash{
+    grid-area: trash;
+    width: 30px;
+    height: 30px;
+    justify-self: flex-end;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('../../images/free_icon_trash_can_5761138_negate.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+.product__description{
+    grid-area: description;
+    margin: 0;
+}
+
+.product__price{
+    grid-area: price;
+    margin: 0 auto;
+}
+
+.product__rating{
+    grid-area: rating;
+    margin: 0 auto;
+}
+
+.product__amount{
+    grid-area: amount;
+    display: flex;
+    margin: 0 auto 0;
+    gap: 50px;
+}
+
+.product__amount-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:455px) {
+    .product{
+        grid-template-areas:
+        'image title title trash'
+        'image price price price'
+        'image rating rating rating'
+        'image amount amount amount'
+        'description description description description';
+        gap:5px;
+    }
+
+    .product__price{
+        margin: 0;
+    }
+
+    .product__amount{
+        gap: 20px;  
+        align-items: center;
+    }
+
+    .product__amount-button{
+        width: 40px;
+        height: 30px;
+    }
+}
