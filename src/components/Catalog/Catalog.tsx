@@ -2,14 +2,14 @@ import React, {useMemo, useState} from 'react';
 import './Catalog.css';
 import '../Main/Main.css'
 import { getCategories } from '../../utils/productsApi/productsApi';
-import { ProductMini } from '../ProductMini';
-import { ProductType } from '../../types/ProductType';
+// import { ProductMini } from '../ProductMini';
+// import { ProductType } from '../../types/ProductType';
 
 
 function Catalog() {
 
   const [categories, setCategories] = useState([]);
-  const [products, setProducts] = useState<ProductType[]>([]);
+  // const [products, setProducts] = useState<ProductType[]>([]);
   const [isCategories, setIsCategories] = useState(true);
 
   useMemo(async() => {
@@ -20,7 +20,7 @@ function Catalog() {
   async function fetchCategory(value:string){
     let res = await fetch(`https://fakestoreapi.com/products/category/${value}`);
     let data = await res.json();
-    setProducts(data);
+    // setProducts(data);
     setIsCategories(!isCategories);
   }
 
@@ -48,7 +48,7 @@ function Catalog() {
           ))}
       </ul>
       }
-      {!isCategories && 
+      {/* {!isCategories && 
       <ul className="main__product-list list-style">
         {products.map(product => <ProductMini
         category= {product.category}
@@ -62,9 +62,9 @@ function Catalog() {
         amount={product.amount}
         productData={product}
         />)}
-      </ul>
+      // </ul>
 
-      }
+      } */}
     </section>
   );
 }

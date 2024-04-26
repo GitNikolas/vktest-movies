@@ -1,0 +1,58 @@
+.saved-movie{
+    display: grid;
+    grid-template-areas:
+    'image title title trash'
+    'image description description description'
+    'image description description description'
+    'image rating rating rating';
+    padding: 10px;
+    background-color: rgb(33, 34, 37);
+    border-radius: 15px;
+    gap:10px;
+    box-sizing: border-box;
+}
+
+.saved-movie__image{
+    max-width: 200px;
+    max-height: 200px;
+    grid-area: image;
+}
+
+.saved-movie__title{
+    grid-area: title;
+    margin: 0;
+}
+
+.saved-movie__trash{
+    grid-area: trash;
+    width: 30px;
+    height: 30px;
+    justify-self: flex-end;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('../../images/free_icon_trash_can_5761138_negate.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+.saved-movie__description{
+    grid-area: description;
+    margin: 0;
+}
+
+.saved-movie__rating{
+    grid-area: rating;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:455px) {
+    .saved-movie{
+        grid-template-areas:
+        'image title title trash'
+        'image description description description'
+        'image description description description'
+        'image rating rating rating';
+        gap:5px;
+    }
+}

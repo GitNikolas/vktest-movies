@@ -1,9 +1,9 @@
-.basket{
+.saved-movies{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
-.basket__list{
+.saved-movies__list{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -12,11 +12,11 @@
 }
 
 @media screen and (max-width:768px) {
-    .basket{
+    .saved-movies{
         grid-template-columns: 1fr;
     }
 
-    .basket__list{
+    .saved-movies__list{
         order: 2;
     }
 }

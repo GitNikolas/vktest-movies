@@ -1,41 +1,40 @@
 import React, {useEffect, useMemo, useState} from 'react';
-import { getProducts } from '../../utils/productsApi/productsApi';
-import { ProductMini } from '../ProductMini';
-import { ProductType } from '../../types/ProductType';
+import { MovieCard } from '../MovieCard';
+import { MovieType } from '../../types/MovieType';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
-import { fetchProducts,pstProduct,delProduct } from '../../app/Product/productsSlice';
+import { fetchUserMovies } from '../../app/Movies/movieSlice';
+import { getMovies } from '../../utils/moviesApi/moviesApi';
 import './Main.css';
 
 function Main() {
 
-  const [products, setProducts] = useState<ProductType[]>([]);
+  const [movies, setMovies] = useState<MovieType[]>([]);
   const dispatch = useAppDispatch();
 
   useMemo(async() => {
-    let res = await getProducts();
-    setProducts(res?.data);
+    dispatch(fetchUserMovies());
   }, [])
 
-  useMemo(async() => {
-    dispatch(fetchProducts());
-  }, [])
+  // useMemo(async() => {
+  //   let res = await getMovies();
+  //   let data = await res.json();
+  //   setMovies(data.docs);
+  //   console.log(data);
+  // }, [])
 
   return (
     <main className="main">
       <ul className="main__product-list list-style">
-      {products.map(product => 
-            (<ProductMini
-            category = {product.category}
-            description={product.description}
-            key={product.id}
-            image={product.image}
-            price={product.price}
-            rating={product.rating}
-            title={product.title}    
-            id={product.id}
-            productData={product}
-            amount={product.amount}
-            ></ProductMini>))}
+      {movies.map(movie => 
+            (<MovieCard
+            key={movie.id}
+            poster={movie.poster}
+            rating={movie.rating}  
+            id={movie.id}
+            name={movie.name}
+            countries={movie.countries}
+            year={movie.year}
+            ></MovieCard>))}
       </ul>
     </main>
   );

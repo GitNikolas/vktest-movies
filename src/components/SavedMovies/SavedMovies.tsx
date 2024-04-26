@@ -1,23 +1,22 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import './Basket.css';
-import Product from '../Product/Product';
+import './SavedMovies.css';
+import Product from '../SavedMovie/SavedMovie';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
-import { fetchProducts } from '../../app/Product/productsSlice';
-import TotalCost from '../TotalCost/TotalCost';
+// import { fetchProducts } from '../../app/Product/movieSlice';
 
-function Basket() {
+function SavedMovies() {
 
-    const products = useAppSelector(state => state.products.value);
+    const movies = useAppSelector(state => state.movies.value);
 
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-      dispatch(fetchProducts());
+      // dispatch(fetchProducts());
     }, [dispatch])
 
   return (
-    <section className='basket'>
-        <ul className='basket__list list-style'>
+    <section className='saved-movies'>
+        {/* <ul className='saved-movies__list list-style'>
             {products?.map(product => 
             (<Product
             category = {product.category}
@@ -31,10 +30,9 @@ function Basket() {
             amount={product.amount}
             productData={product}
             ></Product>))}
-        </ul>
-        <TotalCost/>
+        </ul> */}
     </section>
   );
 }
 
-export default Basket;
+export default SavedMovies;

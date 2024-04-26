@@ -1,19 +1,19 @@
-.product-page{
+.movie-page{
     display: flex;
 }
 
-.product-page__image{
+.movie-page__image{
     margin: auto;
     max-height: 500px;
 }
 
-.product-page__content{
+.movie-page__content{
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
 }
 
-.product-page__add-button{
+.movie-page__add-button{
     font-size: 18px;
     height: 40px;
     width: 100%;
@@ -23,6 +23,6 @@
     cursor: pointer;
 }
 
-.product-page__add-button:hover{
+.movie-page__add-button:hover{
     background-color: rgb(160, 150, 255);
 }
