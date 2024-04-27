@@ -1,22 +1,12 @@
 .saved-movies{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    max-width: 1280px;
+    margin: 0 auto 0;
+    padding: 10px;
 }
 
 .saved-movies__list{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 10px;
-    padding: 10px;
-    margin: 0;
-}
-
-@media screen and (max-width:768px) {
-    .saved-movies{
-        grid-template-columns: 1fr;
-    }
-
-    .saved-movies__list{
-        order: 2;
-    }
+    padding: 0;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
 }

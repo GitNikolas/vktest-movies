@@ -1,0 +1,552 @@
+[
+    {
+        "id": 535341,
+        "name": "1+1",
+        "alternativeName": "Intouchables",
+        "enName": null,
+        "names": [
+            {
+                "name": "1+1",
+                "language": "RU",
+                "type": "Russian title on kinopoisk"
+            },
+            {
+                "name": "Intouchables",
+                "language": null,
+                "type": "Original title on kinopoisk"
+            }
+        ],
+        "type": "movie",
+        "typeNumber": 1,
+        "year": 2011,
+        "description": "Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего подходит для этой работы, – молодого жителя предместья Дрисса, только что освободившегося из тюрьмы. Несмотря на то, что Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную жизнь аристократа дух приключений.",
+        "shortDescription": "Аристократ на коляске нанимает в сиделки бывшего заключенного. Искрометная французская комедия с Омаром Си",
+        "status": null,
+        "rating": {
+            "kp": 8.824,
+            "imdb": 8.5,
+            "filmCritics": 6.8,
+            "russianFilmCritics": 100
+        },
+        "votes": {
+            "kp": 2039933,
+            "imdb": 927219,
+            "filmCritics": 129,
+            "russianFilmCritics": 12,
+            "await": 15
+        },
+        "movieLength": 112,
+        "totalSeriesLength": null,
+        "seriesLength": null,
+        "ratingMpaa": "r",
+        "ageRating": 18,
+        "poster": {
+            "url": "https://image.openmoviedb.com/kinopoisk-images/1946459/bf93b465-1189-4155-9dd1-cb9fb5cb1bb5/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1946459/bf93b465-1189-4155-9dd1-cb9fb5cb1bb5/x1000"
+        },
+        "backdrop": {
+            "url": "https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a000001607394c5d88c8722dd5ea6728fa4/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a000001607394c5d88c8722dd5ea6728fa4/x1000"
+        },
+        "genres": [
+            {
+                "name": "драма"
+            },
+            {
+                "name": "комедия"
+            }
+        ],
+        "countries": [
+            {
+                "name": "Франция"
+            }
+        ],
+        "top10": null,
+        "top250": 1,
+        "isSeries": false,
+        "ticketsOnSale": false
+    },
+    {
+        "id": 1143242,
+        "name": "Джентльмены",
+        "alternativeName": "The Gentlemen",
+        "enName": null,
+        "names": [
+            {
+                "name": "Джентльмены",
+                "language": "RU",
+                "type": "Russian title on kinopoisk"
+            },
+            {
+                "name": "The Gentlemen",
+                "language": null,
+                "type": "Original title on kinopoisk"
+            }
+        ],
+        "type": "movie",
+        "typeNumber": 1,
+        "year": 2019,
+        "description": "Один ушлый американец ещё со студенческих лет приторговывал наркотиками, а теперь придумал схему нелегального обогащения с использованием поместий обедневшей английской аристократии и очень неплохо на этом разбогател. Другой пронырливый журналист приходит к Рэю, правой руке американца, и предлагает тому купить киносценарий, в котором подробно описаны преступления его босса при участии других представителей лондонского криминального мира — партнёра-еврея, китайской диаспоры, чернокожих спортсменов и даже русского олигарха.",
+        "shortDescription": "Наркобарон хочет уйти на покой, но криминальный мир не отпускает. Успешное возвращение Гая Ричи к корням",
+        "status": null,
+        "rating": {
+            "kp": 8.57,
+            "imdb": 7.8,
+            "filmCritics": 6.5,
+            "russianFilmCritics": 85.7143
+        },
+        "votes": {
+            "kp": 1736425,
+            "imdb": 396610,
+            "filmCritics": 278,
+            "russianFilmCritics": 21,
+            "await": 13638
+        },
+        "movieLength": 113,
+        "totalSeriesLength": null,
+        "seriesLength": null,
+        "ratingMpaa": "r",
+        "ageRating": 18,
+        "poster": {
+            "url": "https://image.openmoviedb.com/kinopoisk-images/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/x1000"
+        },
+        "backdrop": {
+            "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1648503/2a000001711b57abb795e9276957168f83e9/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1648503/2a000001711b57abb795e9276957168f83e9/x1000"
+        },
+        "genres": [
+            {
+                "name": "криминал"
+            },
+            {
+                "name": "комедия"
+            },
+            {
+                "name": "боевик"
+            }
+        ],
+        "countries": [
+            {
+                "name": "США"
+            },
+            {
+                "name": "Великобритания"
+            }
+        ],
+        "top10": null,
+        "top250": 25,
+        "isSeries": false,
+        "ticketsOnSale": false
+    },
+    {
+        "id": 462682,
+        "name": "Волк с Уолл-стрит",
+        "alternativeName": "The Wolf of Wall Street",
+        "enName": null,
+        "names": [
+            {
+                "name": "Волк с Уолл-стрит",
+                "language": "RU",
+                "type": "Russian title on kinopoisk"
+            },
+            {
+                "name": "The Wolf of Wall Street",
+                "language": null,
+                "type": "Original title on kinopoisk"
+            }
+        ],
+        "type": "movie",
+        "typeNumber": 1,
+        "year": 2013,
+        "description": "1987 год. Джордан Белфорт становится брокером в успешном инвестиционном банке. Вскоре банк закрывается после внезапного обвала индекса Доу-Джонса. По совету жены Терезы Джордан устраивается в небольшое заведение, занимающееся мелкими акциями. Его настойчивый стиль общения с клиентами и врождённая харизма быстро даёт свои плоды. Он знакомится с соседом по дому Донни, торговцем, который сразу находит общий язык с Джорданом и решает открыть с ним собственную фирму. В качестве сотрудников они нанимают нескольких друзей Белфорта, его отца Макса и называют компанию «Стрэттон Оукмонт». В свободное от работы время Джордан прожигает жизнь: лавирует от одной вечеринки к другой, вступает в сексуальные отношения с проститутками, употребляет множество наркотических препаратов, в том числе кокаин и кваалюд. Однажды наступает момент, когда быстрым обогащением Белфорта начинает интересоваться агент ФБР...",
+        "shortDescription": "Восхождение циника-гедониста на бизнес-олимп 1980-х. Блистательный тандем Леонардо ДиКаприо и Мартина Скорсезе",
+        "status": null,
+        "rating": {
+            "kp": 8.016,
+            "imdb": 8.2,
+            "filmCritics": 7.8,
+            "russianFilmCritics": 77.4194
+        },
+        "votes": {
+            "kp": 1333135,
+            "imdb": 1578443,
+            "filmCritics": 288,
+            "russianFilmCritics": 31,
+            "await": 43020
+        },
+        "movieLength": 180,
+        "totalSeriesLength": null,
+        "seriesLength": null,
+        "ratingMpaa": "r",
+        "ageRating": 18,
+        "poster": {
+            "url": "https://image.openmoviedb.com/kinopoisk-images/1946459/5c758ac0-7a5c-4f00-a94f-1be680a312fb/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1946459/5c758ac0-7a5c-4f00-a94f-1be680a312fb/x1000"
+        },
+        "backdrop": {
+            "url": "https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a00000178c650387351c4923363500151bd/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a00000178c650387351c4923363500151bd/x1000"
+        },
+        "genres": [
+            {
+                "name": "драма"
+            },
+            {
+                "name": "криминал"
+            },
+            {
+                "name": "биография"
+            },
+            {
+                "name": "комедия"
+            }
+        ],
+        "countries": [
+            {
+                "name": "США"
+            }
+        ],
+        "top10": null,
+        "top250": 45,
+        "isSeries": false,
+        "ticketsOnSale": false
+    },
+    {
+        "id": 41519,
+        "name": "Брат",
+        "alternativeName": null,
+        "enName": null,
+        "names": [
+            {
+                "name": "Брат",
+                "language": "RU",
+                "type": "Russian title on kinopoisk"
+            }
+        ],
+        "type": "movie",
+        "typeNumber": 1,
+        "year": 1997,
+        "description": "Демобилизовавшись, Данила Багров вернулся в родной городок. Но скучная жизнь российской провинции не устраивала его, и он решился податься в Петербург, где, по слухам, уже несколько лет процветает его старший брат. Данила нашел брата. Но все оказалось не так просто — брат работает наемным убийцей.",
+        "shortDescription": "Дембель Данила Багров защищает слабых в Петербурге 1990-х. Фильм, сделавший Сергея Бодрова народным героем",
+        "status": null,
+        "rating": {
+            "kp": 8.315,
+            "imdb": 7.8,
+            "filmCritics": 7.6,
+            "russianFilmCritics": 0
+        },
+        "votes": {
+            "kp": 1331199,
+            "imdb": 24456,
+            "filmCritics": 5,
+            "russianFilmCritics": 1,
+            "await": 0
+        },
+        "movieLength": 100,
+        "totalSeriesLength": null,
+        "seriesLength": null,
+        "ratingMpaa": null,
+        "ageRating": 18,
+        "poster": {
+            "url": "https://image.openmoviedb.com/kinopoisk-images/1704946/e9008e2f-433f-43b0-b9b8-2ea8e3fb6c9b/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1704946/e9008e2f-433f-43b0-b9b8-2ea8e3fb6c9b/x1000"
+        },
+        "backdrop": {
+            "url": "https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a0000016127209a2837f7f55b295ef87323/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a0000016127209a2837f7f55b295ef87323/x1000"
+        },
+        "genres": [
+            {
+                "name": "драма"
+            },
+            {
+                "name": "криминал"
+            },
+            {
+                "name": "боевик"
+            }
+        ],
+        "countries": [
+            {
+                "name": "Россия"
+            }
+        ],
+        "top10": null,
+        "top250": 35,
+        "isSeries": false,
+        "ticketsOnSale": false
+    },
+    {
+        "id": 1318972,
+        "name": "Гнев человеческий",
+        "alternativeName": "Wrath of Man",
+        "enName": null,
+        "names": [
+            {
+                "name": "Гнев человеческий",
+                "language": "RU",
+                "type": "Russian title on kinopoisk"
+            },
+            {
+                "name": "Wrath of Man",
+                "language": null,
+                "type": "Original title on kinopoisk"
+            }
+        ],
+        "type": "movie",
+        "typeNumber": 1,
+        "year": 2021,
+        "description": "Грузовики лос-анджелесской инкассаторской компании Fortico Security часто подвергаются нападениям, и во время очередного ограбления погибают оба охранника. Через некоторое время в компанию устраивается крепкий немногословный британец Патрик Хилл. Он получает от босса прозвище Эйч и, впритык к необходимому минимуму пройдя тесты по фитнесу, стрельбе и вождению, отправляется на первое задание. Вскоре и его грузовик пытаются ограбить вооруженные налётчики, но Эйч в одиночку расправляется с целой бандой и становится героем. Кажется, слава и уважение коллег его совершенно не интересуют, ведь он преследует свои цели.",
+        "shortDescription": "Хмурый мужчина прикидывается инкассатором, чтобы выйти на грабителей. Гай Ричи и Джейсон Стэйтем снова вместе",
+        "status": null,
+        "rating": {
+            "kp": 7.617,
+            "imdb": 7.1,
+            "filmCritics": 6.3,
+            "russianFilmCritics": 72.2222
+        },
+        "votes": {
+            "kp": 1281942,
+            "imdb": 206736,
+            "filmCritics": 260,
+            "russianFilmCritics": 36,
+            "await": 23478
+        },
+        "movieLength": 119,
+        "totalSeriesLength": null,
+        "seriesLength": null,
+        "ratingMpaa": "r",
+        "ageRating": 18,
+        "poster": {
+            "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/90d57813-387c-44c4-81c1-ecddb3c417a5/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/90d57813-387c-44c4-81c1-ecddb3c417a5/x1000"
+        },
+        "backdrop": {
+            "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000017b0699c684cc6e9767efb6d4b678/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000017b0699c684cc6e9767efb6d4b678/x1000"
+        },
+        "genres": [
+            {
+                "name": "боевик"
+            },
+            {
+                "name": "триллер"
+            }
+        ],
+        "countries": [
+            {
+                "name": "Великобритания"
+            },
+            {
+                "name": "США"
+            }
+        ],
+        "top10": null,
+        "top250": null,
+        "isSeries": false,
+        "ticketsOnSale": false
+    },
+    {
+        "status": null,
+        "rating": {
+            "kp": 8.277,
+            "imdb": 7.7,
+            "filmCritics": 5.9,
+            "russianFilmCritics": 0,
+            "await": null
+        },
+        "votes": {
+            "kp": 1172008,
+            "imdb": 649657,
+            "filmCritics": 116,
+            "russianFilmCritics": 0,
+            "await": 0
+        },
+        "backdrop": {
+            "url": "https://image.openmoviedb.com/tmdb-images/original/6uLhSLXzB1ooJ3522ydrBZ2Hh0W.jpg",
+            "previewUrl": "https://image.openmoviedb.com/tmdb-images/w500/6uLhSLXzB1ooJ3522ydrBZ2Hh0W.jpg"
+        },
+        "movieLength": 103,
+        "id": 8124,
+        "type": "movie",
+        "name": "Один дома",
+        "description": "Американское семейство отправляется из Чикаго в Европу, но в спешке сборов бестолковые родители забывают дома... одного из своих детей. Юное создание, однако, не теряется и демонстрирует чудеса изобретательности. И когда в дом залезают грабители, им приходится не раз пожалеть о встрече с милым крошкой.",
+        "year": 1990,
+        "poster": {
+            "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/022a58e3-5b9b-411b-bfb3-09fedb700401/orig",
+            "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/022a58e3-5b9b-411b-bfb3-09fedb700401/x1000"
+        },
+        "genres": [
+            {
+                "name": "комедия"
+            },
+            {
+                "name": "семейный"
+            }
+        ],
+        "countries": [
+            {
+                "name": "США"
+            }
+        ],
+        "typeNumber": 1,
+        "alternativeName": "Home Alone",
+        "enName": null,
+        "names": [
+            {
+                "name": "Один дома"
+            },
+            {
+                "name": "Home Alone"
+            },
+            {
+                "name": "Один вдома",
+                "language": "UA",
+                "type": null
+            },
+            {
+                "name": "Один удома",
+                "language": "UA",
+                "type": null
+            },
+            {
+                "name": "Hjemme alene",
+                "language": "NO",
+                "type": null
+            },
+            {
+                "name": "अकेला घर",
+                "language": "IN",
+                "type": "Hindi"
+            },
+            {
+                "name": "Homu aron",
+                "language": "JP",
+                "type": "romaji"
+            },
+            {
+                "name": "Singur acasa",
+                "language": "RO",
+                "type": null
+            },
+            {
+                "name": "Maman, j'ai raté l'avion",
+                "language": "CA",
+                "type": null
+            },
+            {
+                "name": "హోమ్ అలోన్",
+                "language": "IN",
+                "type": "Telugu"
+            },
+            {
+                "name": "Üksinda kodus",
+                "language": "EE",
+                "type": null
+            },
+            {
+                "name": "Home Alone 1",
+                "language": "US",
+                "type": null
+            },
+            {
+                "name": "ホームアローン",
+                "language": "JP",
+                "type": null
+            },
+            {
+                "name": "Mi probre angelito",
+                "language": "MX",
+                "type": null
+            },
+            {
+                "name": "Viens pats mājās",
+                "language": "LV",
+                "type": null
+            },
+            {
+                "name": "Kevin - Allein zu Haus",
+                "language": "DE",
+                "type": null
+            },
+            {
+                "name": "שחכו אותי בבית",
+                "language": "IL",
+                "type": null
+            },
+            {
+                "name": "לבד בבית",
+                "language": "IL",
+                "type": null
+            },
+            {
+                "name": "Ensam hemma",
+                "language": "SE",
+                "type": null
+            },
+            {
+                "name": "Maman, (1) j'ai raté l'avion !",
+                "language": "FR",
+                "type": null
+            },
+            {
+                "name": "나홀로 집에",
+                "language": "KR",
+                "type": null
+            },
+            {
+                "name": "Ở Nhà Một Mình",
+                "language": "VN",
+                "type": null
+            },
+            {
+                "name": "Үйде жалғыз қалғанда",
+                "language": "KZ",
+                "type": null
+            },
+            {
+                "name": "Sam doma",
+                "language": "SI",
+                "type": null
+            },
+            {
+                "name": "לבד בבית 1",
+                "language": "IL",
+                "type": null
+            },
+            {
+                "name": "Mi pobre angelito",
+                "language": "MX",
+                "type": null
+            },
+            {
+                "name": "Solo en casa",
+                "language": "ES",
+                "type": "Castilian Spanish"
+            },
+            {
+                "name": "Evdə Tək",
+                "language": "AZ",
+                "type": null
+            },
+            {
+                "name": "小鬼當家",
+                "language": "TW",
+                "type": null
+            }
+        ],
+        "ratingMpaa": "pg",
+        "shortDescription": "Мальчик-озорник задает жару грабителям. Лучшая комедия для создания праздничного настроения у всей семьи",
+        "ticketsOnSale": false,
+        "ageRating": 0,
+        "logo": {
+            "url": "https://avatars.mds.yandex.net/get-ott/212840/2a00000172550ce8255397b4e3d6f9938ddf/orig"
+        },
+        "top10": null,
+        "top250": 186,
+        "isSeries": false,
+        "seriesLength": null,
+        "totalSeriesLength": null
+    }
+]

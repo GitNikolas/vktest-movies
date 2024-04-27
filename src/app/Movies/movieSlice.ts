@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { MovieType } from '../../types/MovieType';
 // import { getUserMovies } from '../../utils/moviesApi/moviesApi';
-import { deleteProduct, postProduct } from '../../utils/productsApi/productsApi';
 
 export interface ProductsState {
     value: MovieType[];
@@ -31,77 +30,40 @@ const initialState: ProductsState = {
   //   }
   // );
 
-  export const fetchUserMovies = createAsyncThunk(
-    'movies/fetchUserMovies',
-    async (_, { rejectWithValue }) => {
-      let res = localStorage.getItem('movies');
-      console.log(res);
-      return res;
-    }
-  );
-
-  // export const pstProduct = createAsyncThunk(
-  //   'products/pstProduct',
-  //   async (data:MovieType) => {
-  //     // const response = await postProduct(data);
-  //     // return response;
-  //   }
-  // );
-
-  // export const delProduct = createAsyncThunk(
-  //   'products/delProduct',
-  //   async (id:number) => {
-  //     const response = await deleteProduct(id);
-  //     return response;
-  //   }
-  // );
-
 export const moviesSlice = createSlice({
     name: 'movies',
     initialState,
     reducers:{
-      // getUserMovies(state,action){
-      //   console.log(action)
-      //   state.value = state.value.map((item) => {
-      //     if(item.id === action.payload.id && item.amount !== undefined){
-      //       item.amount += 1;
-      //     }
-      //     return item;
-      //   })
-      // },
-      postUserMovies(state,action){
-        state.value = state.value.map((item) => {
-          // if(item.id === action.payload.id && item.amount !== undefined){
-          //   item.amount -= 1;
-          // }
-          return item;
-        })
+      saveMovie(state,action){
+        console.log(action.payload);
+        state.value.push(action.payload);
       },
-      movieDelete(state,action){
-        state.value = state.value.filter(item => item.id != action.payload);
+      deleteMovie(state,action){
+        console.log(action.payload);
+        state.value = state.value.filter(item => item.id != action.payload.id);
       },
     },
     extraReducers: 
     (builder) => {
-        builder
-          .addCase(fetchUserMovies.pending, (state) => {
-            state.status = 'loading';
-            state.error = '';
-          })
-          .addCase(fetchUserMovies.fulfilled, (state, action) => {
-            state.status = 'idle';
-            state.error = '';
-            if(action.payload && typeof action.payload !== 'string'){
-              state.value = action.payload;
-            }
-          })
-          .addCase(fetchUserMovies.rejected, (state,action) => {
-            state.status = 'failed';
-            state.error = action.payload;
-          })
+        // builder
+          // .addCase(fetchMovies.pending, (state) => {
+          //   state.status = 'loading';
+          //   state.error = '';
+          // })
+          // .addCase(fetchMovies.fulfilled, (state, action) => {
+          //   state.status = 'idle';
+          //   state.error = '';
+          //   if(action.payload && typeof action.payload !== 'string'){
+          //     state.value = action.payload;
+          //   }
+          // })
+          // .addCase(fetchMovies.rejected, (state,action) => {
+          //   state.status = 'failed';
+          //   state.error = action.payload;
+          // })
       },
 })
 
-export const { postUserMovies } = moviesSlice.actions;
+export const { saveMovie, deleteMovie } = moviesSlice.actions;
 
 export default moviesSlice.reducer;

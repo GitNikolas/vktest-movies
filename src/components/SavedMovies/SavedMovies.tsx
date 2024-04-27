@@ -1,8 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import './SavedMovies.css';
-import Product from '../SavedMovie/SavedMovie';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
-// import { fetchProducts } from '../../app/Product/movieSlice';
+import { MovieCard } from '../MovieCard';
 
 function SavedMovies() {
 
@@ -10,27 +9,21 @@ function SavedMovies() {
 
     const dispatch = useAppDispatch();
 
-    useEffect(() => {
-      // dispatch(fetchProducts());
-    }, [dispatch])
-
   return (
     <section className='saved-movies'>
-        {/* <ul className='saved-movies__list list-style'>
-            {products?.map(product => 
-            (<Product
-            category = {product.category}
-            description={product.description}
-            key={product.id}
-            image={product.image}
-            price={product.price}
-            rating={product.rating}
-            title={product.title}    
-            id={product.id}
-            amount={product.amount}
-            productData={product}
-            ></Product>))}
-        </ul> */}
+        <ul className='saved-movies__list list-style'>
+          {movies.map(movie => 
+              (<MovieCard
+              key={movie.id}
+              poster={movie.poster}
+              rating={movie.rating}  
+              id={movie.id}
+              name={movie.name}
+              countries={movie.countries}
+              year={movie.year}
+              data={movie}
+              ></MovieCard>))}
+        </ul>
     </section>
   );
 }

@@ -14,14 +14,13 @@ import { UseAuthorization } from './hooks/UseForm/UseAuthorization';
 import { MoviePage } from './components/MoviePage';
 import { AboutProject } from './components/AboutProject';
 import { getMovies } from './utils/moviesApi/moviesApi';
+import SavedMovies from './components/SavedMovies/SavedMovies';
 
 function App() {
 
-  // UseAuthorization();
-
   return (
     <div className="app">
-      {/* <Header/> */}
+      <Header/>
       <div className='content'>
         <Routes>
           <Route
@@ -29,12 +28,12 @@ function App() {
           element={<Main />}
           />
 
-          {/* <Route
-          path='/basket'
-          element={<Basket />}
+          <Route
+          path='/favorites'
+          element={<SavedMovies />}
           />
 
-          <Route
+          {/* <Route
           path='/sign-up'
           element={<Registration />}
           />
@@ -63,10 +62,10 @@ function App() {
           element={<AboutProject />}
           /> */}
 
-          {/* <Route
-          path='/product/:id'
-          element={<ProductPage />}
-          /> */}
+          <Route
+          path='/movie/:id'
+          element={<MoviePage />}
+          />
 
         </Routes>
       </div>

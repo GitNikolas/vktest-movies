@@ -10,3 +10,33 @@
     padding: 0;
     grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.main__pagelist{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    background-color: rgba(13,17,23,.8);
+}
+
+.main__pagelist-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    width:30px;
+    height: 30px;
+}
+
+.main__pagelist-button:hover{
+    background-color: rgba(94, 94, 94, 0.785);
+}
+
+.main__pagelist-button_type_current{
+    background-color: rgba(94, 94, 94, 0.785);
+}

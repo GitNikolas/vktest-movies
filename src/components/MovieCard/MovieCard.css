@@ -1,4 +1,4 @@
-.product-mini{
+.movie-card{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.product-mini__title{
+.movie-card__title{
     margin: 0 0 10px;
     max-height: 24px;
     max-width: 300px;
@@ -22,21 +22,21 @@
     color: white;
 }
 
-.product-mini__title:hover{
+.movie-card__title:hover{
     color: rgb(149, 149, 149);
 }
 
-.product-mini__price{
+.movie-card__price{
     margin: 0;
 }
 
-.product-mini__image{
+.movie-card__image{
     max-width: 70%;
     max-height: 70%;
     cursor: pointer;
 }
 
-.product-mini__add-button{
+.movie-card__add-button{
     font-size: 18px;
     width: 100%;
     border-bottom-left-radius: 5px;
@@ -45,4 +45,8 @@
     border: none;
     color: white;
     cursor: pointer;
+}
+
+.movie-card__add-button_type_delete{
+    background-color: rgb(98, 98, 98);
 }

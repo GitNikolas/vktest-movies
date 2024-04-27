@@ -2,10 +2,14 @@ import { FC, useEffect, useMemo, useState } from 'react';
 import { MoviePageProps } from '.';
 import { useParams } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { fetchUserMovies } from '../../app/Movies/movieSlice';
 import { MovieType } from '../../types/MovieType';
 import Loader from '../UI/Spinner/Loader';
 import './MoviePage.css'
+import { getMoviesById, getSimilarMovies } from '../../utils/moviesApi/moviesApi';
+import { saveMovie, deleteMovie } from '../../app/Movies/movieSlice';
+import { Link } from 'react-router-dom';
+import test from './test.json';
+import test2 from './test2.json';
 
 export const MoviePage: FC<MoviePageProps> = (props) => {
 
@@ -13,45 +17,85 @@ export const MoviePage: FC<MoviePageProps> = (props) => {
 	const movies = useAppSelector(state => state.movies.value);
 	const dispatch = useAppDispatch();
 	const [ movieData, setMovieData ] = useState<MovieType | null >(null);
+	const [ similarMovies, setSimilarMovies ] = useState<MovieType[]>([]);
 	const [ inSaved, setInSaved ] = useState(false);
+	const genres = movieData?.genres?.map((item) => ` ${item.name}`).toString();
 
-	// function checkIsInSaved(){
-	// 	if(movieData && movies) {
-	// 		let check = movies.some(item => item.id === movieData.id);
-	// 		let elementFromBusket = movies.filter(item => item.id === movieData.id)[0];
-	// 		setAmountInBusket(elementFromBusket?.amount);
-	// 		setInBusket(check);
-	// 	}
-	// }
+	function checkIsInSaved(){
+		if(movieData && movies) {
+			let check = movies.some(item => item.id === movieData.id);
+			setInSaved(check);
+		}
+	}
+
+	function handlePostMovie(){
+		saveMovie(movieData);
+	}
+
+	function handleDeleteMovie(){
+		deleteMovie(movieData);
+	}
 
 	useMemo(async() => {
-		dispatch(fetchUserMovies());
-		// let res = await fetch(`https://fakestoreapi.com/products/${id}`);
+
+		// let res = await getMoviesById(id);
 		// let data = await res.json();
 		// setMovieData(data);
+		// let similarRes = await getSimilarMovies(data.id);
+		// let similarData = await similarRes.json();
+		// similarData = similarData.docs.filter((movie:MovieType) => movie.id !== data.id);
+		// setSimilarMovies(similarData);
+
+		// @ts-ignore
+		setMovieData(test);
+		let similarData = test2.filter((movie) => movie.id !== test.id);
+
+		// @ts-ignore
+		setSimilarMovies(similarData);
+
+		console.log(movieData?.genres);
 	}, [])
 
-	// useEffect(() => {
-	// 	checkIsInSaved();
-	// }, [movies, movieData])
+	useEffect(() => {
+		checkIsInSaved();
+	}, [movies, movieData])
 
 	return (
 	movieData
 	?
 	<div className='movie-page'>
-		{/* <img className='movie-page__image' src={movieData.image} alt={movieData.title}/> */}
 
-		{/* <div className='movie-page__content'>
-			<p className='movie-page__title'>{productData.title}</p>
-			<p>{movieData.description}</p>
-			<p> Рейтинг: {movieData.rating.rate}</p>
-			{!inBusket && <button className='movie-page__add-button'
-			// onClick={handlePostProduct}
-			>Добавить в избранное</button>}
-			{inBusket &&<button className='movie-page__add-button'
-			// onClick={handleDeleteProduct}
-			>Удалить из избранного</button>}
-		</div> */}
+		<div className='movie-page__content'>
+			<img className='movie-page__image' src={movieData.poster.url} alt={movieData.name}/>
+			<div>
+				<p className='movie-page__title'>{movieData.name} ({movieData.year})</p>
+				<p className='movie-page__title'>Длительность: {movieData.movieLength} мин.</p>
+				<p className='movie-page__title'>Жанр: {genres}.</p>
+				<p>{movieData.description}</p>
+				<p> Рейтинг IMDB: {movieData.rating.imdb}</p>
+				{!inSaved && <button className='movie-page__add-button'
+				onClick={handlePostMovie}
+				>Добавить в избранное</button>}
+				{inSaved &&<button className='movie-page__add-button'
+				onClick={handleDeleteMovie}
+				>Удалить из избранного</button>}
+			</div>
+
+		</div>
+
+		<h4>Похожие фильмы</h4>
+
+		<ul className='similar-movies list-style'>
+		{ similarMovies.map(movie => <li key={movie.id}>
+			<Link to={`/movie/${movie.id}`} className='similar-movies__link' target='_blank'>
+				<img
+				src={movie.poster.url}
+				alt={movie.name}
+				className='similar-movies__poster'></img>
+				<p>{movie.name}</p>
+			</Link>
+		</li>) }
+		</ul>
 
 	</div>	
 	:

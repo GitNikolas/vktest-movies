@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../../images/Untitled_logo_1_free-file.jpg'
 import Menu from '../Menu/Menu';
 import { MobileMenu } from '../MobileMenu';
 const mobileScreenWidth = 768;
@@ -38,7 +37,6 @@ function Header() {
 
   return (
       <header className="header">
-        <img src={logo} className='header__logo'></img>
        { screenWidth > 768 ? <Menu /> : <MobileMenu isOpen={openMenu} toggleOpenMenu={toggleOpenMenu} />}
       </header>
   );

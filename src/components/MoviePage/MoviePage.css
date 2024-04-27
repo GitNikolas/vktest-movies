@@ -1,5 +1,7 @@
 .movie-page{
     display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .movie-page__image{
@@ -9,8 +11,8 @@
 
 .movie-page__content{
     display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .movie-page__add-button{
@@ -25,4 +27,25 @@
 
 .movie-page__add-button:hover{
     background-color: rgb(160, 150, 255);
+}
+
+.similar-movies{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+}
+
+.similar-movies__poster{
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.similar-movies__link{
+    color: white;
+    text-decoration: none;
+}
+
+.similar-movies__link:hover{
+    color: gray;
 }
