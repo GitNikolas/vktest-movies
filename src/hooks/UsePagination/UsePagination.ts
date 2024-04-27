@@ -9,16 +9,18 @@ export function UsePagination() {
 
 
     function prevPagesClick(){
-        setPrevPages(state => state -= 10);
-        setNextPages(state => state -= 10);
+        if(prevPages > 0) {
+            setPrevPages(state => state -= 10);
+            setNextPages(state => state -= 10);
+        }
     }
 
     function nextPagesClick(){
-        setPrevPages(state => state += 10);
-        setNextPages(state => state += 10);
+        if(nextPages < totalPages.length){
+            setPrevPages(state => state += 10);
+            setNextPages(state => state += 10);
+        }
     }
-
-    useEffect(() => {}, [prevPages])
 
     return { page, setPage, pages, totalPages, setTotalPages, prevPagesClick, nextPagesClick };
 }
