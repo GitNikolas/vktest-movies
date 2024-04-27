@@ -33,7 +33,6 @@
 .movie-card__image{
     max-width: 70%;
     max-height: 70%;
-    cursor: pointer;
 }
 
 .movie-card__add-button{

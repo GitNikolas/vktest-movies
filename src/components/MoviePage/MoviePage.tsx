@@ -52,8 +52,6 @@ export const MoviePage: FC<MoviePageProps> = (props) => {
 
 		// @ts-ignore
 		setSimilarMovies(similarData);
-
-		console.log(movieData?.genres);
 	}, [])
 
 	useEffect(() => {
