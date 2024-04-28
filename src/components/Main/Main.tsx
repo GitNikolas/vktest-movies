@@ -14,23 +14,20 @@ function Main() {
   const [movies, setMovies] = useState<MovieType[]>([]);
   const dispatch = useAppDispatch();
 
-  const {page, setPage, pages, totalPages, setTotalPages, prevPagesClick, nextPagesClick} = UsePagination();
+  const {page, setPage, pages, totalPages, setTotalPages, prevPagesClick, nextPagesClick, setDefaultPages} = UsePagination();
 
   useMemo(async() => {
-    // let res = await getMovies(page);
-    // let data = await res.json();
-
-		// @ts-ignore
-    setMovies(testing);
-    // console.log(data);
+    let res = await getMovies(page);
+    let data = await res.json();
+    let pagesArr = [...Array(data.pages)].map((_, i) => i + 1);
+    setTotalPages(pagesArr);
+    setMovies(data.docs);
   }, [page]);
-
-
-  // function 
 
   return (
     <main className="main">
       <div className="main__pagelist">
+        <button onClick={setDefaultPages} className="main__pagelist-button" style={{width: 80 }}>В начало</button>
         <button className="main__pagelist-button" onClick={prevPagesClick}>{` < `}</button>
         {pages.map(pageNumber => <button key={pageNumber} onClick={() => setPage(pageNumber)} className={`main__pagelist-button ${currentPage(pageNumber)}`}>{pageNumber}</button>)}
         <button className="main__pagelist-button" onClick={nextPagesClick}>{` > `}</button>

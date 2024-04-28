@@ -35,11 +35,9 @@ export const moviesSlice = createSlice({
     initialState,
     reducers:{
       saveMovie(state,action){
-        console.log(action.payload);
         state.value.push(action.payload);
       },
       deleteMovie(state,action){
-        console.log(action.payload);
         state.value = state.value.filter(item => item.id != action.payload.id);
       },
     },

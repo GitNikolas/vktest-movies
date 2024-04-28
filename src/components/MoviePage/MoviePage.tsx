@@ -29,28 +29,20 @@ export const MoviePage: FC<MoviePageProps> = (props) => {
 	}
 
 	function handlePostMovie(){
-		saveMovie(movieData);
+		dispatch(saveMovie(movieData));
 	}
 
 	function handleDeleteMovie(){
-		deleteMovie(movieData);
+		dispatch(deleteMovie(movieData));
 	}
 
 	useMemo(async() => {
-
-		// let res = await getMoviesById(id);
-		// let data = await res.json();
-		// setMovieData(data);
-		// let similarRes = await getSimilarMovies(data.id);
-		// let similarData = await similarRes.json();
-		// similarData = similarData.docs.filter((movie:MovieType) => movie.id !== data.id);
-		// setSimilarMovies(similarData);
-
-		// @ts-ignore
-		setMovieData(test);
-		let similarData = test2.filter((movie) => movie.id !== test.id);
-
-		// @ts-ignore
+		let res = await getMoviesById(id);
+		let data = await res.json();
+		setMovieData(data);
+		let similarRes = await getSimilarMovies(data.id);
+		let similarData = await similarRes.json();
+		similarData = similarData.docs.filter((movie:MovieType) => movie.id !== data.id);
 		setSimilarMovies(similarData);
 	}, [])
 

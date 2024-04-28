@@ -22,5 +22,10 @@ export function UsePagination() {
         }
     }
 
-    return { page, setPage, pages, totalPages, setTotalPages, prevPagesClick, nextPagesClick };
+    function setDefaultPages(){
+        setPrevPages(0);
+        setNextPages(10);
+    }
+
+    return { page, setPage, pages, totalPages, setTotalPages, prevPagesClick, nextPagesClick, setDefaultPages };
 }
