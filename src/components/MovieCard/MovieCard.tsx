@@ -32,7 +32,7 @@ export const MovieCard: FC<MovieType> = ({ name, rating, countries, id, year, po
 	return <li className='movie-card'>
 		<img className='movie-card__image' src={poster?.url} alt={name}/>
 		<Link to={`/movie/${id}`} className='movie-card__title'>
-			{`${name} ↗`}
+			{`${name ? name : data.alternativeName} ↗`}
 		</Link>
 		{!inSaved && <button className='movie-card__add-button'
 		onClick={handlePostMovie}

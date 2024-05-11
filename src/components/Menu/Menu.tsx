@@ -21,7 +21,7 @@ function Menu() {
 
     return (
       <menu className="menu">
-        <Link to='/' className={`menu__link ${location.pathname === '/' && 'menu__link__current'}`}>Главная</Link>
+        <Link to='/vktest-movies/' className={`menu__link ${location.pathname === '/' && 'menu__link__current'}`}>Главная</Link>
         <Link to='/favorites' className={`menu__link ${location.pathname === '/basket' && 'menu__link__current'}`}>Избранное</Link>
       </menu>
       );

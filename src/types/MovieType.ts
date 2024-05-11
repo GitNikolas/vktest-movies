@@ -9,6 +9,7 @@ export interface MovieType {
     description?:string;
     movieLength?:number;
     genres?:{name:string}[];
+    alternativeName?:string;
 }
 
 type Data = MovieType;

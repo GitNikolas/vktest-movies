@@ -2,7 +2,7 @@ const baseUrl = 'https://api.kinopoisk.dev/v1.4';
 
 export async function getMovies(page:number) {
     try{
-      let response = await fetch(`${baseUrl}/movie?page=${page}&limit=12&rating.imdb=7-10`, {
+      let response = await fetch(`${baseUrl}/movie?page=${page}&limit=12&rating.kp=8.5-10`, {
         method:'GET',
         headers: {
             'X-API-KEY': '8KZQHZ9-35KM64C-K9VAJ23-42J06CA'
